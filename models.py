@@ -40,3 +40,6 @@ class Product:
             f"Цена: {self.price} руб. × {self.quantity} = {self.total()} руб. "
             f"({self.indicator()}) | Фото: {self.photo}"
         )
+    def discounted_price(self):
+        """Цена со скидкой 25% (упрощённо, только для тренировки веток)."""
+        return self.price * 0.75
