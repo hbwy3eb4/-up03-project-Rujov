@@ -1,0 +1,1009 @@
+03ec09c (HEAD -> main) Первый коммит: README и .gitignore
+a795793 Первый коммит: README и .gitignore
+PS C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project> git remote add origin https://github.com/hbwy3eb4/-up03-project-Rujov.git
+PS C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project> git remote -v
+origin  https://github.com/hbwy3eb4/-up03-project-Rujov.git (fetch)
+origin  https://github.com/hbwy3eb4/-up03-project-Rujov.git (push)
+PS C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project> git branch -M main
+PS C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project> git push -u origin main
+info: please complete authentication in your browser...
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (6/6), 828 bytes | 828.00 KiB/s, done.
+Total 6 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/hbwy3eb4/-up03-project-Rujov.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+PS C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+PS C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project> python task_01_discount.py
+Traceback (most recent call last):
+  File "C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project\task_01_discount.py", line 126, in <module>
+    App(root)
+    ~~~^^^^^^
+  File "C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project\task_01_discount.py", line 49, in __init__
+    self.show_list()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project\task_01_discount.py", line 62, in show_list
+    self._refresh()
+    ~~~~~~~~~~~~~^^
+  File "C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project\task_01_discount.py", line 74, in _refresh
+    for row in self.db.get_all(self.TABLE):
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project\task_01_discount.py", line 13, in get_all
+    self.cur.execute(f"SELECT * FROM {table}")
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: Товар
+PS C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project> python task_01_discount.py
+PS C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project> git add task_01_discount.py
+PS C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project> git commit -m "Туризм"                          
+[main c7258f2] Туризм
+ 1 file changed, 127 insertions(+)
+ create mode 100644 task_01_discount.py
+PS C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project> git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.95 KiB | 1.95 MiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/hbwy3eb4/-up03-project-Rujov.git
+   03ec09c..c7258f2  main -> main
+PS C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project> git add db_variant_12.db   
+The following paths are ignored by one of your .gitignore files:
+db_variant_12.db
+hint: Use -f if you really want to add them.
+hint: Disable this message with "git config set advice.addIgnoredFile false"
+PS C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project> git push                
+Everything up-to-date
+PS C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project> git add db_variant_12.db
+PS C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project> git push                
+Everything up-to-date
+PS C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project> git add db_variant_12.db
+PS C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project> git commit -m "БД"      
+[main 80a933d] БД
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 db_variant_12.db
+PS C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project> git push                
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.56 KiB | 1.56 MiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/hbwy3eb4/-up03-project-Rujov.git
+   c7258f2..80a933d  main -> main
+PS C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project> python test_product.py
+Тур: Турция, Анталья (7 дн.) | Цена: 45000 руб. × 3 = 135000 руб. (мало) | Фото: turkey.jpg
+Со скидкой 10%: 40500.00 руб.
+PS C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project> python db_products.py
+C:\Users\student\AppData\Local\Programs\Python\Python315\python.exe: can't open file 'C:\\Users\\student\\Downloads\\Туризм-20261022T095200Z-1-001\\Туризм\\up02_project\\db_products.py': [Errno 2] No such file or directory
+PS C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project> cmd databases
+Microsoft Windows [Version 10.0.26200.9711]
+(c) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>python db_products.py
+
+Всего туров в базе: 6
+
+Тур: Турция, Анталья (7 дн.) | Цена: 50000.0 руб. × 14 = 700000.0 руб. (много) | Фото: turkey.png
+------------------------------------------------------------
+Тур: Египет, Хургада (10 дн.) | Цена: 60000.0 руб. × 12 = 720000.0 руб. (много) | Фото: egypt.png
+------------------------------------------------------------
+Тур: Италия, Рим (5 дн.) | Цена: 80000.0 руб. × 8 = 640000.0 руб. (много) | Фото: italy.png
+------------------------------------------------------------
+Тур: Франция, Париж (4 дн.) | Цена: 90000.0 руб. × 6 = 540000.0 руб. (много) | Фото: 
+------------------------------------------------------------
+Тур: Испания, Барселона (7 дн.) | Цена: 75000.0 руб. × 10 = 750000.0 руб. (много) | Фото: spain.png
+------------------------------------------------------------
+Тур: Таиланд, Пхукет (14 дн.) | Цена: 120000.0 руб. × 5 = 600000.0 руб. (мало) | Фото: thailand.png
+------------------------------------------------------------
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>python db_products.py
+
+================================================================================
+ КАТАЛОГ ВСЕХ ТУРОВ (6 туров)
+================================================================================
+     Тур: Турция, Анталья (7 дн.) | Цена: 50000.0 руб. × 14 = 700000.0 руб. (много) | Фото: turkey.png
+     Тур: Египет, Хургада (10 дн.) | Цена: 60000.0 руб. × 12 = 720000.0 руб. (много) | Фото: egypt.png
+     Тур: Италия, Рим (5 дн.) | Цена: 80000.0 руб. × 8 = 640000.0 руб. (много) | Фото: italy.png
+     Тур: Франция, Париж (4 дн.) | Цена: 90000.0 руб. × 6 = 540000.0 руб. (много) | Фото: 
+     Тур: Испания, Барселона (7 дн.) | Цена: 75000.0 руб. × 10 = 750000.0 руб. (много) | Фото: spain.png
+ ⚠️  Тур: Таиланд, Пхукет (14 дн.) | Цена: 120000.0 руб. × 5 = 600000.0 руб. (мало) | Фото: thailand.png
+================================================================================
+
+================================================================================
+ ТУРЫ В ТУРЦИЮ (1 туров)
+================================================================================
+     Тур: Турция, Анталья (7 дн.) | Цена: 50000.0 руб. × 14 = 700000.0 руб. (много) | Фото: turkey.png
+================================================================================
+
+================================================================================
+ ТУРЫ С НИЗКИМ ОСТАТКОМ МЕСТ (<= 5) (1 туров)
+================================================================================
+ ⚠️  Тур: Таиланд, Пхукет (14 дн.) | Цена: 120000.0 руб. × 5 = 600000.0 руб. (мало) | Фото: thailand.png
+================================================================================
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>git add config.py models.py test_product.py db_products.py
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>git commit -m "Пара 4: класс Product и загрузка туров из БД"
+[main a9387c4] Пара 4: класс Product и загрузка туров из БД
+ 4 files changed, 148 insertions(+)
+ create mode 100644 config.py
+ create mode 100644 db_products.py
+ create mode 100644 models.py
+ create mode 100644 test_product.py
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 2.62 KiB | 2.62 MiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/hbwy3eb4/-up03-project-Rujov.git
+   80a933d..a9387c4  main -> main
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>python test_discount.py
+======================================================================
+ТЕСТИРОВАНИЕ АЛГОРИТМА СКИДКИ (Дата расчёта: 15.10.2026)
+======================================================================
+ ✅  Товар 1: 50000.0 → 50000.0 (ожидалось 50000.0) — Турция — есть заказ в сентябре → без скидки
+ ✅  Товар 2: 60000.0 → 60000.0 (ожидалось 60000.0) — Египет — есть заказ в сентябре → без скидки
+ ✅  Товар 4: 90000.0 → 67500.0 (ожидалось 67500.0) — Франция — нет заказа в сентябре → скидка 25% (90000 × 0.75)
+ ✅  Товар 6: 120000.0 → 90000.0 (ожидалось 90000.0) — Таиланд — нет заказа в сентябре → скидка 25% (120000 × 0.75)
+======================================================================
+Пройдено: 4 / 4
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>python test_models_discount.py
+Базовая цена: 120000.0 руб.
+Цена со скидкой (авто): 90000.0 руб.
+Ожидаемая цена (120000 * 0.75): 90000.0 руб.
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>git add discount.py test_discount.py models.py
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>git commit -m "Пара 5: алгоритм скидки"
+[main e41ca15] Пара 5: алгоритм скидки
+ 3 files changed, 103 insertions(+), 2 deletions(-)
+ create mode 100644 discount.py
+ create mode 100644 test_discount.py
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 2.29 KiB | 2.29 MiB/s, done.
+Total 5 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/hbwy3eb4/-up03-project-Rujov.git
+   a9387c4..e41ca15  main -> main
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>python test_discount.py
+======================================================================
+РАСШИРЕННОЕ ТЕСТИРОВАНИЕ АЛГОРИТМА СКИДКИ
+======================================================================
+ ✅  Товар 1 на 2026-10-15: 50000.0 → 50000.0 (ожидалось 50000.0) — Турция — есть заказ в сентябре
+ ✅  Товар 2 на 2026-10-15: 60000.0 → 60000.0 (ожидалось 60000.0) — Египет — есть заказ в сентябре
+ ✅  Товар 3 на 2026-10-15: 80000.0 → 80000.0 (ожидалось 80000.0) — Италия — есть заказ в сентябре
+ ✅  Товар 4 на 2026-10-15: 90000.0 → 67500.0 (ожидалось 67500.0) — Франция — нет заказа в сентябре → скидка 25%
+ ✅  Товар 6 на 2026-10-15: 120000.0 → 90000.0 (ожидалось 90000.0) — Таиланд — нет заказа в сентябре → скидка 25%
+ ✅  Товар 1 на 2026-11-15: 50000.0 → 50000.0 (ожидалось 50000.0) — Турция — есть заказ в октябре
+ ✅  Товар 2 на 2026-11-15: 60000.0 → 45000.0 (ожидалось 45000.0) — Египет — нет заказа в октябре → скидка 25%
+ ✅  Товар 4 на 2026-11-15: 90000.0 → 67500.0 (ожидалось 67500.0) — Франция — нет заказа в октябре → скидка 25%
+ ✅  Товар 1 на 2026-09-01: 50000.0 → 37500.0 (ожидалось 37500.0) — Турция — нет заказа в августе → скидка 25%
+ ✅  Товар 5 на 2026-09-01: 75000.0 → 56250.0 (ожидалось 56250.0) — Испания — нет заказа в августе → скидка 25%
+======================================================================
+Пройдено: 10 / 10
+ ВСЕ ТЕСТЫ ПРОЙДЕНЫ!
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>git add discount.py test_discount.py models.py
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>git commit -m "Пара 6: расширенное тестирование алгоритма скидки"
+[main 86fc8ba] Пара 6: расширенное тестирование алгоритма скидки
+ 1 file changed, 27 insertions(+), 18 deletions(-)
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1012 bytes | 1012.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/hbwy3eb4/-up03-project-Rujov.git
+   e41ca15..86fc8ba  main -> main
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>git branch
+* main
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>git checkout -b feature/discount
+Switched to a new branch 'feature/discount'
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>git branch
+* feature/discount
+  main
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>git add models.py
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>git commit -m "Добавлен метод discounted_price в ветке feature/discount"
+[feature/discount 9b8ccdd] Добавлен метод discounted_price в ветке feature/discount
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>git log --oneline
+9b8ccdd (HEAD -> feature/discount) Добавлен метод discounted_price в ветке feature/discount
+86fc8ba (origin/main, origin/HEAD, main) Пара 6: расширенное тестирование алгоритма скидки
+e41ca15 Пара 5: алгоритм скидки
+a9387c4 Пара 4: класс Product и загрузка туров из БД
+80a933d БД
+c7258f2 Туризм
+03ec09c Первый коммит: README и .gitignore
+a795793 Первый коммит: README и .gitignore
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>git branch
+* feature/discount
+  main
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>git checkout main
+M       README.md
+D       db_variant_12.db
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>git merge feature/discount
+Updating 86fc8ba..9b8ccdd
+Fast-forward
+ models.py | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>git log --oneline
+9b8ccdd (HEAD -> main, feature/discount) Добавлен метод discounted_price в ветке feature/discount
+86fc8ba (origin/main, origin/HEAD) Пара 6: расширенное тестирование алгоритма скидки
+e41ca15 Пара 5: алгоритм скидки
+a9387c4 Пара 4: класс Product и загрузка туров из БД
+80a933d БД
+c7258f2 Туризм
+03ec09c Первый коммит: README и .gitignore
+a795793 Первый коммит: README и .gitignore
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>git branch -d feature/discount
+Deleted branch feature/discount (was 9b8ccdd).
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>git checkout -b conflict-test
+Switched to a new branch 'conflict-test'
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>git add models.py
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>git commit -m "Изменение скидки на 20% в ветке conflict-test"
+[conflict-test 41d8dd1] Изменение скидки на 20% в ветке conflict-test
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>git checkout main
+M       README.md
+D       db_variant_12.db
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>git add models.py
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>git commit -m "Изменение скидки на 10% в main"
+[main 37e2091] Изменение скидки на 10% в main
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>git merge conflict-test
+Auto-merging models.py
+CONFLICT (content): Merge conflict in models.py
+Automatic merge failed; fix conflicts and then commit the result.
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>git add models.py
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>git commit -m "Разрешён конфликт: установлена скидка 25%"
+On branch main
+Your branch is ahead of 'origin/main' by 4 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+        deleted:    db_variant_12.db
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        test_models_discount.py
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>git branch -d conflict-test
+Deleted branch conflict-test (was 41d8dd1).
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>git push origin main
+Enumerating objects: 12, done.
+Counting objects: 100% (12/12), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (10/10), done.
+Writing objects: 100% (10/10), 1.10 KiB | 1.10 MiB/s, done.
+Total 10 (delta 8), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (8/8), completed with 2 local objects.
+To https://github.com/hbwy3eb4/-up03-project-Rujov.git
+   86fc8ba..9676996  main -> main
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>   git checkout -b feature/orders
+Switched to a new branch 'feature/orders'
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>   git add models.py
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>   git commit -m "Добавлен метод order_info"
+[feature/orders 56a8fdf] Добавлен метод order_info
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>   git checkout main
+M       README.md
+D       db_variant_12.db
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>   git merge feature/orders
+Updating 9676996..56a8fdf
+Fast-forward
+ models.py | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>   git branch -d feature/orders
+Deleted branch feature/orders (was 56a8fdf).
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>   git checkout -b conflict-2
+Switched to a new branch 'conflict-2'
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>   git add README.md
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>   git commit -m "Изменение README в ветке conflict-2"
+[conflict-2 fcd1be4] Изменение README в ветке conflict-2
+ 1 file changed, 34 insertions(+), 1 deletion(-)
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>   git checkout main
+D       db_variant_12.db
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>   git add README.md
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>   git commit -m "Изменение README в main"
+[main 076eb67] Изменение README в main
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>   git merge conflict-2
+Auto-merging README.md
+CONFLICT (content): Merge conflict in README.md
+Automatic merge failed; fix conflicts and then commit the result.
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>   git add README.md
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>   git commit -m "Разрешён конфликт в README"
+[main 36888f8] Разрешён конфликт в README
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>   git branch -d conflict-2
+Deleted branch conflict-2 (was fcd1be4).
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>git add .
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>git commit -m "ДЗ Пара 7: работа с ветками и конфликтами"
+[main 1583c67] ДЗ Пара 7: работа с ветками и конфликтами
+ 2 files changed, 21 insertions(+)
+ delete mode 100644 db_variant_12.db
+ create mode 100644 test_models_discount.py
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>git push
+Enumerating objects: 18, done.
+Counting objects: 100% (18/18), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (15/15), done.
+Writing objects: 100% (15/15), 2.93 KiB | 1.46 MiB/s, done.
+Total 15 (delta 9), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (9/9), completed with 2 local objects.
+To https://github.com/hbwy3eb4/-up03-project-Rujov.git
+   9676996..1583c67  main -> main
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>git add models.py
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>git commit -m "Пара 8: добавлен метод is_available"
+[main 20c198c] Пара 8: добавлен метод is_available
+ 1 file changed, 3 insertions(+)
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 457 bytes | 457.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/hbwy3eb4/-up03-project-Rujov.git
+   1583c67..20c198c  main -> main
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>git pull origin main
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (3/3), 1009 bytes | 84.00 KiB/s, done.
+From https://github.com/hbwy3eb4/-up03-project-Rujov
+ * branch            main       -> FETCH_HEAD
+   20c198c..6b90aa4  main       -> origin/main
+Updating 20c198c..6b90aa4
+Fast-forward
+ README.md | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>git checkout -b feature/homework-8
+Switched to a new branch 'feature/homework-8'
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>git add homework_info.txt
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>git commit -m "ДЗ Пара 8: добавлен файл homework_info.txt"
+[feature/homework-8 6190ea8] ДЗ Пара 8: добавлен файл homework_info.txt
+ 1 file changed, 3 insertions(+)
+ create mode 100644 homework_info.txt
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>git push -u origin feature/homework-8
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 481 bytes | 481.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'feature/homework-8' on GitHub by visiting:
+remote:      https://github.com/hbwy3eb4/-up03-project-Rujov/pull/new/feature/homework-8
+remote: 
+To https://github.com/hbwy3eb4/-up03-project-Rujov.git
+ * [new branch]      feature/homework-8 -> feature/homework-8
+branch 'feature/homework-8' set up to track 'origin/feature/homework-8'.
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>git pull origin main
+From https://github.com/hbwy3eb4/-up03-project-Rujov
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>git branch -d feature/homework-8
+warning: deleting branch 'feature/homework-8' that has been merged to
+         'refs/remotes/origin/feature/homework-8', but not yet merged to HEAD
+Deleted branch feature/homework-8 (was 6190ea8).
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project># Переключитесь на main
+"#" не является внутренней или внешней
+командой, исполняемой программой или пакетным файлом.
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>git checkout main
+Already on 'main'
+Your branch is up to date with 'origin/main'.
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project># Получите изменения с GitHub (включая слияние)
+"#" не является внутренней или внешней
+командой, исполняемой программой или пакетным файлом.
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>git pull origin main
+remote: Enumerating objects: 1, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (1/1), 966 bytes | 193.00 KiB/s, done.
+From https://github.com/hbwy3eb4/-up03-project-Rujov
+ * branch            main       -> FETCH_HEAD
+   6b90aa4..7b0d79c  main       -> origin/main
+Updating 6b90aa4..7b0d79c
+Fast-forward
+ homework_info.txt | 3 +++
+ 1 file changed, 3 insertions(+)
+ create mode 100644 homework_info.txt
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project># Удалите локальную ветку (она уже слита)
+"#" не является внутренней или внешней
+командой, исполняемой программой или пакетным файлом.
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>git branch -d feature/homework-8          
+error: branch 'feature/homework-8' not found
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   .gitignore
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        databases/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>git add .gitignore
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>git commit -m "Пара 9: обновлён .gitignore"
+[main b64fae7] Пара 9: обновлён .gitignore
+ 1 file changed, 31 insertions(+), 5 deletions(-)
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        databases/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project># 1. Создаем файл лога (должен игнорироваться)
+"#" не является внутренней или внешней
+командой, исполняемой программой или пакетным файлом.
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>echo "Это тестовый лог." > test.log
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project># 2. Создаем временный файл (должен игнорироваться)
+"#" не является внутренней или внешней
+командой, исполняемой программой или пакетным файлом.
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>echo "Это временный файл." > test.tmp
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project># 3. Создаем важный файл (должен отслеживаться Git)
+"#" не является внутренней или внешней
+командой, исполняемой программой или пакетным файлом.
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>echo "Это важный файл — он должен попасть в репозиторий." > important.txt
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        databases/
+        important.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>git log
+commit b64fae7a53ff0f325a2c5cbd9545ff0a6a28307b (HEAD -> main)
+Author: Рыжов Артем Александрович <a.rujov@yandex.ru>
+Date:   Thu Oct 22 15:54:13 2026 +0300
+
+    Пара 9: обновлён .gitignore
+
+commit 7b0d79c38ecf1751b234eaecd0bc25e8e49fdd84 (origin/main, origin/HEAD)
+Merge: 6b90aa4 6190ea8
+Author: hbwy3eb4 <92145169+hbwy3eb4@users.noreply.github.com>
+Date:   Thu Oct 22 15:52:14 2026 +0300
+
+    Merge pull request #1 from hbwy3eb4/feature/homework-8
+    
+    ДЗ Пара 8: добавлен файл homework_info.txt
+
+commit 6190ea8a76f67d26e81974468c32e79feecbf0cb (origin/feature/homework-8)
+Author: Рыжов Артем Александрович <a.rujov@yandex.ru>
+Date:   Thu Oct 22 15:47:48 2026 +0300
+
+    ДЗ Пара 8: добавлен файл homework_info.txt
+
+commit 6b90aa4f4039e74f9c237a184f752cbfe1ddc92f
+Author: hbwy3eb4 <92145169+hbwy3eb4@users.noreply.github.com>
+Date:   Thu Oct 22 15:45:49 2026 +0300
+
+    Update README.md
+
+commit 20c198cb9a3f8157fc124e771b11ed3703a77f55
+Author: Рыжов Артем Александрович <a.rujov@yandex.ru>
+Date:   Thu Oct 22 15:44:19 2026 +0300
+
+    Пара 8: добавлен метод is_available
+
+commit 1583c671d823f436123c3355a24c6741886955c9
+Author: Рыжов Артем Александрович <a.rujov@yandex.ru>
+Date:   Thu Oct 22 15:30:33 2026 +0300
+
+    ДЗ Пара 7: работа с ветками и конфликтами
+
+commit 36888f8fae7e2522341a07186c35a5fb2c67e3bf
+Merge: 076eb67 fcd1be4
+Author: Рыжов Артем Александрович <a.rujov@yandex.ru>
+Date:   Thu Oct 22 15:30:25 2026 +0300
+
+    Разрешён конфликт в README
+
+commit 076eb6727ca1397dbad645fc6a820e6435f4a326
+Author: Рыжов Артем Александрович <a.rujov@yandex.ru>
+Date:   Thu Oct 22 15:29:52 2026 +0300
+
+    Изменение README в main
+
+commit fcd1be40648f80069b80b9e7a519fe1bc04c4990
+Author: Рыжов Артем Александрович <a.rujov@yandex.ru>
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>git log --oneline
+b64fae7 (HEAD -> main) Пара 9: обновлён .gitignore
+7b0d79c (origin/main, origin/HEAD) Merge pull request #1 from hbwy3eb4/feature/homework-8
+6190ea8 (origin/feature/homework-8) ДЗ Пара 8: добавлен файл homework_info.txt
+6b90aa4 Update README.md
+20c198c Пара 8: добавлен метод is_available
+1583c67 ДЗ Пара 7: работа с ветками и конфликтами
+36888f8 Разрешён конфликт в README
+076eb67 Изменение README в main
+fcd1be4 Изменение README в ветке conflict-2
+56a8fdf Добавлен метод order_info
+9676996 Merge branch 'conflict-test'
+37e2091 Изменение скидки на 10% в main
+41d8dd1 Изменение скидки на 20% в ветке conflict-test
+9b8ccdd Добавлен метод discounted_price в ветке feature/discount
+86fc8ba Пара 6: расширенное тестирование алгоритма скидки
+e41ca15 Пара 5: алгоритм скидки
+a9387c4 Пара 4: класс Product и загрузка туров из БД
+80a933d БД
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>git log --oneline --graph --all
+* b64fae7 (HEAD -> main) Пара 9: обновлён .gitignore
+*   7b0d79c (origin/main, origin/HEAD) Merge pull request #1 from hbwy3eb4/feature/homework-8
+|\  
+| * 6190ea8 (origin/feature/homework-8) ДЗ Пара 8: добавлен файл homework_info.txt
+|/  
+* 6b90aa4 Update README.md
+* 20c198c Пара 8: добавлен метод is_available
+* 1583c67 ДЗ Пара 7: работа с ветками и конфликтами
+*   36888f8 Разрешён конфликт в README
+|\  
+| * fcd1be4 Изменение README в ветке conflict-2
+* | 076eb67 Изменение README в main
+|/  
+* 56a8fdf Добавлен метод order_info
+*   9676996 Merge branch 'conflict-test'
+|\  
+| * 41d8dd1 Изменение скидки на 20% в ветке conflict-test
+* | 37e2091 Изменение скидки на 10% в main
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>git log --stat -3
+commit b64fae7a53ff0f325a2c5cbd9545ff0a6a28307b (HEAD -> main)
+Author: Рыжов Артем Александрович <a.rujov@yandex.ru>
+Date:   Thu Oct 22 15:54:13 2026 +0300
+
+    Пара 9: обновлён .gitignore
+
+ .gitignore | 36 +++++++++++++++++++++++++++++++-----
+ 1 file changed, 31 insertions(+), 5 deletions(-)
+
+commit 7b0d79c38ecf1751b234eaecd0bc25e8e49fdd84 (origin/main, origin/HEAD)
+Merge: 6b90aa4 6190ea8
+Author: hbwy3eb4 <92145169+hbwy3eb4@users.noreply.github.com>
+Date:   Thu Oct 22 15:52:14 2026 +0300
+
+    Merge pull request #1 from hbwy3eb4/feature/homework-8
+    
+    ДЗ Пара 8: добавлен файл homework_info.txt
+
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>git log --oneline -5
+b64fae7 (HEAD -> main) Пара 9: обновлён .gitignore
+7b0d79c (origin/main, origin/HEAD) Merge pull request #1 from hbwy3eb4/feature/homework-8
+6190ea8 (origin/feature/homework-8) ДЗ Пара 8: добавлен файл homework_info.txt
+6b90aa4 Update README.md
+20c198c Пара 8: добавлен метод is_available
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>git log --pretty=format:"%h - %an, %ar : %s" -5
+b64fae7 - Рыжов Артем Александрович, 5 minutes ago : Пара 9: обновлён .gitignore
+7b0d79c - hbwy3eb4, 7 minutes ago : Merge pull request #1 from hbwy3eb4/feature/homework-8
+6190ea8 - Рыжов Артем Александрович, 11 minutes ago : ДЗ Пара 8: добавлен файл homework_info.txt
+6b90aa4 - hbwy3eb4, 13 minutes ago : Update README.md
+20c198c - Рыжов Артем Александрович, 14 minutes ago : Пара 8: добавлен метод is_available
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>git log --oneline --graph --all --max-count=20 > git_history.txt
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project># Добавляем все новые файлы (important.txt, git_history.txt)
+"#" не является внутренней или внешней
+командой, исполняемой программой или пакетным файлом.
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>git add .
+warning: in the working copy of 'git_history.txt', LF will be replaced by CRLF the next time Git touches it
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project># Коммит
+"#" не является внутренней или внешней
+командой, исполняемой программой или пакетным файлом.
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>git commit -m "Пара 9: .gitignore и история коммитов"
+[main 355decf] Пара 9: .gitignore и история коммитов
+ 3 files changed, 27 insertions(+)
+ create mode 100644 databases/db_variant_12.db
+ create mode 100644 git_history.txt
+ create mode 100644 important.txt
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project># Отправляем на GitHub
+"#" не является внутренней или внешней
+командой, исполняемой программой или пакетным файлом.
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>git push origin main
+Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (9/9), 2.90 KiB | 594.00 KiB/s, done.
+Total 9 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To https://github.com/hbwy3eb4/-up03-project-Rujov.git
+   7b0d79c..355decf  main -> main
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>python main_catalog.py
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>python main_catalog.py
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project># 1. Добавляем все новые файлы (каталог, стили, ресурсы)
+"#" не является внутренней или внешней
+командой, исполняемой программой или пакетным файлом.
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>git add .
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project># 2. Делаем коммит с понятным описанием
+"#" не является внутренней или внешней
+командой, исполняемой программой или пакетным файлом.
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>git commit -m "Пара 10-11: каталог по макету, стили и ресурсы"
+[main 1c2a67c] Пара 10-11: каталог по макету, стили и ресурсы
+ 8 files changed, 202 insertions(+)
+ create mode 100644 catalog.py
+ create mode 100644 database.py
+ create mode 100644 main_catalog.py
+ create mode 100644 resources.py
+ create mode 100644 resources/icon.ico
+ create mode 100644 resources/logo.png
+ create mode 100644 resources/picture.png
+ create mode 100644 styles.py
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project># 3. Отправляем всё на GitHub
+"#" не является внутренней или внешней
+командой, исполняемой программой или пакетным файлом.
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>git push origin main
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (9/9), 4.43 KiB | 2.21 MiB/s, done.
+Total 9 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/hbwy3eb4/-up03-project-Rujov.git
+   355decf..1c2a67c  main -> main
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project># 1. Добавляем все новые файлы (каталог, стили, ресурсы)
+"#" не является внутренней или внешней
+командой, исполняемой программой или пакетным файлом.
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>git add .
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project># 2. Коммит с понятным описанием
+"#" не является внутренней или внешней
+командой, исполняемой программой или пакетным файлом.
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>git commit -m "Пары 10-11: каталог по макету КИМ, стили Calibri, ресурсы"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project># 3. Отправляем на GitHub
+"#" не является внутренней или внешней
+командой, исполняемой программой или пакетным файлом.
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>git push origin main
+Everything up-to-date
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>python main_catalog.py
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>python main_catalog.py
+Traceback (most recent call last):
+  File "C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project\main_catalog.py", line 8, in <module>
+    from catalog import create_product_card
+  File "C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project\catalog.py", line 11
+    card.bind("<Button-1>", open_view)
+                                      ^
+IndentationError: unindent does not match any outer indentation level
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>python main_catalog.py
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>python -c "from order_manager import get_product_quantity; print('Мест у тура 1:', get_product_quantity(1))"
+Мест у тура 1: 14
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>python main_catalog.py
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>python main_catalog.py
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>python main_catalog.py
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>git add .
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>git commit -m "Пары 12-20: форма просмотра, order_manager и интеграция с БД"
+[main 3155dd7] Пары 12-20: форма просмотра, order_manager и интеграция с БД
+ 4 files changed, 248 insertions(+), 20 deletions(-)
+ create mode 100644 order_manager.py
+ create mode 100644 view_form.py
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>git push origin main
+Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (7/7), 4.33 KiB | 4.33 MiB/s, done.
+Total 7 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+To https://github.com/hbwy3eb4/-up03-project-Rujov.git
+   1c2a67c..3155dd7  main -> main
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>pip install Pillow
+Requirement already satisfied: Pillow in C:\Users\student\AppData\Local\Programs\Python\Python315\Lib\site-packages (13.0.0)
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>   pip install Pillow
+Requirement already satisfied: Pillow in C:\Users\student\AppData\Local\Programs\Python\Python315\Lib\site-packages (13.0.0)
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>   python main_catalog.py
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>python setup_db.py
+✅ Таблица 'Состав_заказа' создана!
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>python -c "from order_manager import get_all_orders; print(get_all_orders())"
+[(7, '2026-10-22', '123'), (6, '2026-10-22', 'Рыжов Артем'), (5, '2026-10-22', '1'), (4, '2026-10-19', '1'), (3, '2026-09-25', 'Иванов Иван Иванович'), (2, '2026-09-20', 'Петрова Анна Сергеевна'), (1, '2026-09-15', 'Иванов Иван Иванович')]
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>python main_catalog.py
+  File "C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project\main_catalog.py", line 23
+    """Открывает окно списка заказов."""
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+IndentationError: expected an indented block after function definition on line 22
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>python main_catalog.py
+Traceback (most recent call last):
+  File "C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project\main_catalog.py", line 8, in <module>
+    from catalog import create_product_card
+  File "C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project\catalog.py", line 5, in <module>
+    from view_form import ViewForm
+  File "C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project\view_form.py", line 6, in <module>
+    from order_manager import add_order_to_db, update_product_quantity, get_product_quantity
+ImportError: cannot import name 'add_order_to_db' from 'order_manager' (C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project\order_manager.py)
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>python main_catalog.py
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\student\AppData\Local\Programs\Python\Python315\Lib\tkinter\__init__.py", line 2185, in __call__
+    return self.func(*args)
+           ~~~~~~~~~^^^^^^^
+  File "C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project\main_catalog.py", line 28, in open_orders
+    from orders_window import OrdersWindow
+  File "C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project\orders_window.py", line 4, in <module>
+    from styles import (
+    ...<2 lines>...
+    )
+ImportError: cannot import name 'FONT_SIZE_NORMAL' from 'styles' (C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project\styles.py)
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\student\AppData\Local\Programs\Python\Python315\Lib\tkinter\__init__.py", line 2185, in __call__
+    return self.func(*args)
+           ~~~~~~~~~^^^^^^^
+  File "C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project\main_catalog.py", line 28, in open_orders
+    from orders_window import OrdersWindow
+  File "C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project\orders_window.py", line 4, in <module>
+    from styles import (
+    ...<2 lines>...
+    )
+ImportError: cannot import name 'FONT_SIZE_NORMAL' from 'styles' (C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project\styles.py)
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\student\AppData\Local\Programs\Python\Python315\Lib\tkinter\__init__.py", line 2185, in __call__
+    return self.func(*args)
+           ~~~~~~~~~^^^^^^^
+  File "C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project\main_catalog.py", line 28, in open_orders
+    from orders_window import OrdersWindow
+  File "C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project\orders_window.py", line 4, in <module>
+    from styles import (
+    ...<2 lines>...
+    )
+ImportError: cannot import name 'FONT_SIZE_NORMAL' from 'styles' (C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project\styles.py)
+❌ Ошибка добавления заказа: NOT NULL constraint failed: Заказ.товар_id
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\student\AppData\Local\Programs\Python\Python315\Lib\tkinter\__init__.py", line 2185, in __call__
+    return self.func(*args)
+           ~~~~~~~~~^^^^^^^
+  File "C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project\main_catalog.py", line 28, in open_orders
+    from orders_window import OrdersWindow
+  File "C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project\orders_window.py", line 4, in <module>
+    from styles import (
+    ...<2 lines>...
+    )
+ImportError: cannot import name 'FONT_SIZE_NORMAL' from 'styles' (C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project\styles.py)
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>python main_catalog.py
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\student\AppData\Local\Programs\Python\Python315\Lib\tkinter\__init__.py", line 2185, in __call__
+    return self.func(*args)
+           ~~~~~~~~~^^^^^^^
+  File "C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project\main_catalog.py", line 118, in open_orders
+    from orders_window import OrdersWindow
+  File "C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project\orders_window.py", line 95
+    """Окно списка заказов для Менеджера."""
+                                            ^
+IndentationError: unindent does not match any outer indentation level
+❌ Ошибка добавления заказа: NOT NULL constraint failed: Заказ.товар_id
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\student\AppData\Local\Programs\Python\Python315\Lib\tkinter\__init__.py", line 2185, in __call__
+    return self.func(*args)
+           ~~~~~~~~~^^^^^^^
+  File "C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project\main_catalog.py", line 118, in open_orders
+    from orders_window import OrdersWindow
+  File "C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project\orders_window.py", line 95
+    """Окно списка заказов для Менеджера."""
+                                            ^
+IndentationError: unindent does not match any outer indentation level
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\student\AppData\Local\Programs\Python\Python315\Lib\tkinter\__init__.py", line 2185, in __call__
+    return self.func(*args)
+           ~~~~~~~~~^^^^^^^
+  File "C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project\main_catalog.py", line 118, in open_orders
+    from orders_window import OrdersWindow
+  File "C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project\orders_window.py", line 95
+    """Окно списка заказов для Менеджера."""
+                                            ^
+IndentationError: unindent does not match any outer indentation level
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\student\AppData\Local\Programs\Python\Python315\Lib\tkinter\__init__.py", line 2185, in __call__
+    return self.func(*args)
+           ~~~~~~~~~^^^^^^^
+  File "C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project\main_catalog.py", line 118, in open_orders
+    from orders_window import OrdersWindow
+  File "C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project\orders_window.py", line 95
+    """Окно списка заказов для Менеджера."""
+                                            ^
+IndentationError: unindent does not match any outer indentation level
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>   python main_catalog.py
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>dir orders_window.py
+ Том в устройстве C не имеет метки.
+ Серийный номер тома: 4855-EBC4
+
+ Содержимое папки C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project
+
+22.10.2026  17:15            10 477 orders_window.py
+               1 файлов         10 477 байт
+               0 папок  732 284 170 240 байт свободно
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>dir order_items_window.py
+ Том в устройстве C не имеет метки.
+ Серийный номер тома: 4855-EBC4
+
+ Содержимое папки C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project
+
+Файл не найден
+
+C:\Users\student\Downloads\Туризм-20261022T095200Z-1-001\Туризм\up02_project>

@@ -33,6 +33,10 @@ class Product:
         """Индикатор «много/мало» (порог 5)."""
         return "много" if self.quantity > 5 else "мало"
 
+    def is_available(self):
+        """Товар доступен для заказа?"""
+        return self.quantity > 0
+
     def info(self):
         """Строка с информацией о туре."""
         return (
@@ -40,12 +44,3 @@ class Product:
             f"Цена: {self.price} руб. × {self.quantity} = {self.total()} руб. "
             f"({self.indicator()}) | Фото: {self.photo}"
         )
-    def discounted_price(self):
-        """Цена со скидкой 25% (упрощённо, только для тренировки веток)."""
-        return self.price * 0.75
-    def is_available(self):
-        """Товар доступен для заказа?"""
-        return self.quantity > 0
-    def order_info(self):
-       """Информация о заказе."""
-       return f"Заказ №{self.id} от {self.date}: {self.client}"
