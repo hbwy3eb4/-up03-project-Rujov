@@ -43,3 +43,6 @@ class Product:
     def discounted_price(self):
         """Цена со скидкой 25% (упрощённо, только для тренировки веток)."""
         return self.price * 0.75
+    def order_info(self):
+       """Информация о заказе."""
+       return f"Заказ №{self.id} от {self.date}: {self.client}"
