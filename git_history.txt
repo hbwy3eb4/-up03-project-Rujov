@@ -1,0 +1,26 @@
+* b64fae7 Пара 9: обновлён .gitignore
+*   7b0d79c Merge pull request #1 from hbwy3eb4/feature/homework-8
+|\  
+| * 6190ea8 ДЗ Пара 8: добавлен файл homework_info.txt
+|/  
+* 6b90aa4 Update README.md
+* 20c198c Пара 8: добавлен метод is_available
+* 1583c67 ДЗ Пара 7: работа с ветками и конфликтами
+*   36888f8 Разрешён конфликт в README
+|\  
+| * fcd1be4 Изменение README в ветке conflict-2
+* | 076eb67 Изменение README в main
+|/  
+* 56a8fdf Добавлен метод order_info
+*   9676996 Merge branch 'conflict-test'
+|\  
+| * 41d8dd1 Изменение скидки на 20% в ветке conflict-test
+* | 37e2091 Изменение скидки на 10% в main
+|/  
+* 9b8ccdd Добавлен метод discounted_price в ветке feature/discount
+* 86fc8ba Пара 6: расширенное тестирование алгоритма скидки
+* e41ca15 Пара 5: алгоритм скидки
+* a9387c4 Пара 4: класс Product и загрузка туров из БД
+* 80a933d БД
+* c7258f2 Туризм
+* 03ec09c Первый коммит: README и .gitignore
