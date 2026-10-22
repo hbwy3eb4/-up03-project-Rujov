@@ -1,7 +1,9 @@
 """Модели данных для проекта УП.02 (Туризм)."""
+from datetime import datetime
+from discount import calculate_price_with_discount
 
 class Product:
-    """Класс Товар (в нашем случае - Тур)."""
+    """Класс Товар (в нашем случае — Тур)."""
     
     def __init__(self, product_id, country, city, duration, price, quantity, photo):
         """Инициализация объекта."""
@@ -18,8 +20,14 @@ class Product:
         return self.price * self.quantity
 
     def price_with_discount(self, discount_percent):
-        """Цена со скидкой."""
+        """Цена со скидкой (ручной ввод процента)."""
         return self.price * (1 - discount_percent / 100)
+
+    def price_with_discount_auto(self, date=None):
+        """Цена со скидкой по алгоритму ДЭ (25%, если нет заказов в прошлом месяце)."""
+        if date is None:
+            date = datetime.now()
+        return calculate_price_with_discount(self.id, self.price, date)
 
     def indicator(self):
         """Индикатор «много/мало» (порог 5)."""
